@@ -61,7 +61,7 @@
                     <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt="image"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right" style="padding: 20px 0px;">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About us </a></li>
                         <li><a href="service.html">Service</a></li>
@@ -260,9 +260,10 @@
 					</div>
 				</div><!-- end service -->
 			</div>
+            
 		</div><!-- end row -->
         <!-- new row -->
-        <div class="row">
+        <div class="row omarCard">
             <!-- First Property -->
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="service-widget">
@@ -425,6 +426,7 @@
                     </div>
                 </div>
             </div>
+
           
         
         <!-- Duplicate row starts here -->
@@ -477,7 +479,7 @@
         <a href="#" class="modal__overlay"></a>
         <div class="modal__content">
             <img src="images/Pacific Island/Layout.jpg" alt="" style="width:100%;" class="img-responsive">
-
+            <button class="modal-download" onclick="modalDownload('modal-download-1', 'pdf/Layout....pro.pdf', 'Layout.jpg')">Download</button>
             <a href="#" class="modal__close">&times;</a>
         </div>
     </div>
@@ -486,6 +488,7 @@
         <a href="#" class="modal__overlay"></a>
         <div class="modal__content">
             <img src="images/Pacific Island/Location Map.jpg" alt="" style="width:100%;" class="img-responsive">
+            <button class="modal-download" onclick="modalDownload('modal-download-2', 'pdf/Location Map.pdf','Location Map.jpg')">Download</button>
             <a href="#" class="modal__close">&times;</a>
         </div>
     </div>
@@ -494,11 +497,34 @@
         <a href="#" class="modal__overlay"></a>
         <div class="modal__content">
             <img src="images/Pacific Island/Brochure.jpg" alt="" style="width:100%;" class="img-responsive">
-
-            <a href="#" class="modal__close">&times;</a>
+            <button class="modal-download" onclick="modalDownload('modal-download-3', 'pdf/1st Brochure.pdf','Brochure.jpg')">Download</button>
+            <!-- <a class="project-box" href="#"><h2>Download</h2></a> -->
+            <a href="#" class="modal__close" id="close_download">&times;</a>
         </div>
     </div>
 
+    <script>
+
+        function modalDownload(params, fileLink) {
+            console.log('omar ali 2222', params, fileLink, name);
+
+            let fileUrl = fileLink; // Change to your file URL
+            
+            // Create an <a> element for downloading
+            let a = document.createElement("a");
+            a.href = fileUrl;
+            a.download = name; // Change the downloaded file name
+            document.body.appendChild(a); // Append to the body
+            a.click(); // Simulate click to start download
+            document.body.removeChild(a); // Remove element after click
+
+            let close = document.getElementById("close_download");
+            close.click();
+        }
+
+    </script>
+    
+    
     
     </body>
     <iframe 

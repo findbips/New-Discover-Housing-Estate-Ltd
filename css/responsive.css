@@ -190,11 +190,12 @@
     .navbar-collapse {
         margin-top: 15px;
     }
+    /* omar edit  */
     .header_style_01 {
         background-color: #1f1f1f;
         display: block;
         left: 0;
-        padding: 20px 0px;
+        padding: 0px 0px;
         right: 0;
         top: 0;
         width: 100%;
@@ -209,16 +210,20 @@
     .navbar-default .navbar-form {
         border-color: transparent;
     }
+    /* Omar edit  */
     .navbar-header {
         float: none;
+        padding-top: 0px;
     }
     .navbar-left,
     .navbar-right {
         float: none !important;
     }
+    /* omar edit  */
     .navbar-toggle {
         display: block;
 		border-radius: 2px;
+        margin: 20px 0px;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -388,7 +393,7 @@
 		margin-bottom: 30px;
 	}
 }
-
+/* omar edit  */
 @media (max-width: 600px) {
     body.host_version .btn-light,
     body.app_version .btn-light {
@@ -470,7 +475,7 @@
 		width: 228px;
 	}
 	.fixed-menu .navbar-default{
-		padding: 15px;
+		padding: 0px;
 	}
 	.item-foot{
 		padding: 14px 0px;
