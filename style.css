@@ -2633,7 +2633,7 @@ select.mobile-device {
 
 .footer-links li {
     margin-bottom: 10px;
-    display: block;
+    display: -webkit-inline-box;
     width: 100%;
     border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
     padding-bottom: 10px;
