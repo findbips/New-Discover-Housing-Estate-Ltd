@@ -243,41 +243,49 @@ body {
 }
 /* for management team */
 .management-section {
-    background: #f7f5f4; /* Dark background */
-    padding: 40px;
+    background: #f7f5f4;
+    padding: 40px 20px;
     text-align: center;
+}
+.management-section h1 {
+    margin-bottom: 20px; 
 }
 
 .management-section h2 {
-    color: #000000; /* Stylish gold text */
+    color: #000000;
     font-size: 22px;
-    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
     margin-bottom: 20px;
 }
 
 .management-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
 .management-card {
     background: white;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     text-align: center;
     width: 280px;
+    max-width: 100%;
+    min-width: 250px; 
 }
 
 .management-card img {
     width: 100%;
+    height: 250px; 
+    object-fit: cover; 
     border-radius: 5px;
 }
 
 .text-overlay {
-    padding: 10px;
+    padding: 12px;
     background: white;
     color: black;
 }
@@ -289,7 +297,35 @@ body {
 
 .designation {
     font-size: 14px;
-    color: #333;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .management-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .management-card {
+        width: 90%; 
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .management-section h2 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .designation {
+        font-size: 13px;
+    }
 }
 /* Button Box */
 .project-box {
